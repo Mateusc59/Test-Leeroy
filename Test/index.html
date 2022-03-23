@@ -5,36 +5,47 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
 
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="index.css">
 
   <title>Frontend Mentor</title>
-
+  <script src="nav.js" defer> </script>
   <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Alata&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300&display=swap');
+</style>
 </head>
-<header>
-  <div class="container container-nav">
-    </div class="side-title">
-    <h1>Loopstudios</h1>
-    </div>
-    <nav>
-      <ul>
-        <li><a href="#">About</a></li>
-        <li><a href="#"></a>Careers</li>
-        <li><a href="#"></a>Events</li>
-        <li><a href="#"></a>Products</li>
-        <li><a href="#"></a>Support</li>
-      </ul>
-    </nav>
-
-  </div>
-</header>
 <body>
+  <header class="primary-header flex">
+    <div class="intro">
+      </div>
+        <h1 class="logo">Loopstudios</h1>
+      </div>
+
+      <div class="headline">
+        <h2>Immersive experiences that deliver</h2>
+      </div>
+
+      <button class="mobile-nav-toggle"
+      aria-controls="primary-navigation" aria-expanded="false">
+        <span class="sr-only"></span>
+      </button>
 
 
-  Immersive experiences that deliver
+      <nav>
+        <ul id="primary-navigation" data-visible="false" class="primary-navigation flex">
+          <li><a href="#">About</a></li>
+          <li><a href="#">Careers</a></li>
+          <li><a href="#">Events</a></li>
+          <li><a href="#">Products</a></li>
+          <li><a href="#">Support</a></li>
+        </ul>
+      </nav>
+
+    </div>
+  </header>
+
+
 
   The leader in interactive VR
 
@@ -56,10 +67,6 @@
   The curiosity
   Make it fisheye
 
-  About
-  Careers
-  Events
-  Products
-  Support
+
 </body>
 </html>
