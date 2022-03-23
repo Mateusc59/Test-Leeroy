@@ -1,0 +1,134 @@
+body{
+  margin: 0 auto;
+  background-color: white;
+  overflow-x: hidden;
+  font-size: 15px;
+  font-family: 'Alata', sans-serif;
+}
+
+
+/* general */
+.flex{
+  display: flex;
+  gap: var(--gap,1rem);
+}
+
+
+/* primary Header */
+
+.logo{
+  margin: 2rem;
+  margin-left: -10em;
+}
+
+.primary-header{
+  align-items: center;
+  justify-content: space-between;
+  margin-right: 3em;
+}
+
+.mobile-nav-toggle{
+  display: none;
+}
+
+.primary-navigation{
+   list-style: none;
+   padding: 0;
+   margin: 0;
+}
+
+.primary-navigation a {
+  text-decoration: none;
+  color: green;
+}
+
+@media (max-width: 375px) {
+  .primary-navigation{
+    position: fixed;
+    z-index: 1000;
+    inset: 0 0 0 10%;
+    flex-direction: column;
+    padding: min(30vh, 10rem) 0.5em;
+    transform: translateX(100%);
+    transition: transform  350ms ease;
+    background: hsl(0, 0%, 0%);
+  }
+
+  .primary-navigation[data-visible="true"]{
+        transform: translateX(0%);
+
+  }
+
+  .logo{
+    position: absolute;
+    margin:1em;
+    margin-top: -20em;
+    color: white;
+  }
+
+
+
+  .primary-navigation a {
+    text-decoration: none;
+    color:hsl(0, 0%, 100%);
+    font-size:2em;
+    font-family: 'Alata', sans-serif;
+    font-weight:lighter;
+
+  }
+
+  .mobile-nav-toggle{
+    display: block;
+    position: absolute;
+    z-index: 9999;
+    background-color: transparent;
+    background: url('images/icon-hamburger.svg');
+    background-repeat: no-repeat;
+    color: white;
+    border: none;
+    width: 2rem;
+    aspect-ratio: 1;
+    top: 2rem;
+    right: 2rem;
+    cursor:pointer;
+
+  }
+
+  .mobile-nav-toggle[aria-expanded="true"]{
+    background-image: url('images/icon-close.svg');
+  }
+
+.intro{
+  background-image:url('images/mobile/image-hero.jpg');
+  background-size: cover;
+  min-width: 150%;
+  background-position: center;
+  min-height: 100vh;
+}
+
+.headline {
+  position: absolute;
+  height: 30%;
+  width: 88%;
+  margin:1em;
+  margin-left:1em;
+  margin-top: 2em;
+  color: white;
+  border: 2px solid white;
+  font-size: 2em;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  font-weight: lighter;
+  display: flex;
+  align-items: center;
+}
+
+.headline h2{
+  display: block;
+  font-weight: 100;
+  padding: 0.35em;
+  line-height: 1;
+
+}
+
+}

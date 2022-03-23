@@ -5,29 +5,53 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
 
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
-  <title>Frontend Mentor</title>
+  <link rel="stylesheet" href="index.css">
 
+  <title>Frontend Mentor</title>
+  <script src="nav.js" defer> </script>
   <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Alata&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300&display=swap');
+</style>
 </head>
 <body>
-  About
-  Careers
-  Events
-  Products
-  Support
+  <header class="primary-header flex">
+    <div class="intro">
+      </div>
+        <h1 class="logo">Loopstudios</h1>
+      </div>
 
-  Immersive experiences that deliver
+      <div class="headline">
+        <h2>Immersive experiences that deliver</h2>
+      </div>
+
+      <button class="mobile-nav-toggle"
+      aria-controls="primary-navigation" aria-expanded="false">
+        <span class="sr-only"></span>
+      </button>
+
+
+      <nav>
+        <ul id="primary-navigation" data-visible="false" class="primary-navigation flex">
+          <li><a href="#">About</a></li>
+          <li><a href="#">Careers</a></li>
+          <li><a href="#">Events</a></li>
+          <li><a href="#">Products</a></li>
+          <li><a href="#">Support</a></li>
+        </ul>
+      </nav>
+
+    </div>
+  </header>
+
+
 
   The leader in interactive VR
 
-  Founded in 2011, Loopstudios has been producing world-class virtual reality 
-  projects for some of the best companies around the globe. Our award-winning 
-  creations have transformed businesses through digital experiences that bind 
+  Founded in 2011, Loopstudios has been producing world-class virtual reality
+  projects for some of the best companies around the globe. Our award-winning
+  creations have transformed businesses through digital experiences that bind
   to their brand.
 
   Our creations
@@ -43,10 +67,6 @@
   The curiosity
   Make it fisheye
 
-  About
-  Careers
-  Events
-  Products
-  Support
+
 </body>
 </html>
