@@ -2,7 +2,8 @@ body{
   margin: 0 auto;
   background-color: grey;
   overflow-x: hidden;
-
+  font-size: 15px;
+  font-family: 'Alata', sans-serif;
 }
 
 
@@ -17,11 +18,13 @@ body{
 
 .logo{
   margin: 2rem;
+  margin-left: -10em;
 }
 
 .primary-header{
   align-items: center;
   justify-content: space-between;
+  margin-right: 3em;
 }
 
 .mobile-nav-toggle{
@@ -39,15 +42,16 @@ body{
   color: green;
 }
 
-@media (max-width: 35em) {
+@media (max-width: 375px) {
   .primary-navigation{
     position: fixed;
     z-index: 1000;
-    inset: 0 0 0 35%;
+    inset: 0 0 0 10%;
     flex-direction: column;
     padding: min(30vh, 10rem) 0.5em;
     transform: translateX(100%);
-    background: black;
+    transition: transform  350ms ease;
+    background: hsl(0, 0%, 0%);
   }
 
   .primary-navigation[data-visible="true"]{
@@ -55,10 +59,27 @@ body{
 
   }
 
+  .logo{
+    margin: 0.5em;
+    margin-left: -3em;
+  }
+
+
+
+  .primary-navigation a {
+    text-decoration: none;
+    color:hsl(0, 0%, 100%);
+    font-size:2em;
+    font-family: 'Alata', sans-serif;
+    font-weight:lighter;
+
+  }
+
   .mobile-nav-toggle{
     display: block;
     position: absolute;
     z-index: 9999;
+    background-color: transparent;
     background: url('images/icon-hamburger.svg');
     background-repeat: no-repeat;
     color: white;
@@ -67,7 +88,20 @@ body{
     aspect-ratio: 1;
     top: 2rem;
     right: 2rem;
+    cursor:pointer;
 
   }
+
+  .mobile-nav-toggle[aria-expanded="true"]{
+    background-image: url('images/icon-close.svg');
+  }
+
+.intro{
+  background-image:url('images/mobile/image-hero.jpg');
+  background-size: cover;
+  min-width: 150%;
+  background-position: center;
+  min-height: 100vh;
+}
 
 }
