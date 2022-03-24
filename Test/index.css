@@ -5,6 +5,12 @@ body{
   font-family: 'Alata', sans-serif;
   font-size: 15px;
   font-weight: lighter;
+  background-image:url('images/desktop/image-hero.jpg');
+  object-fit: cover;
+  background-position: top;
+  background-repeat: no-repeat;
+  height: 60vh;
+  width: 100%;
 
 }
 
@@ -18,15 +24,67 @@ body{
 
 /* primary Header */
 
-.logo{
-  margin: 2rem;
-  margin-left: -10em;
-}
-
 .primary-header{
   align-items: center;
   justify-content: space-between;
-  margin-right: 3em;
+}
+
+
+@media (min-width:375px) {
+
+.container-text{
+  border: 3px solid white;
+  margin: auto;
+  width: 100%;
+
+}
+
+.headline {
+  padding: 1.25em ;
+  color: white;
+  max-width: 70%;
+  min-width: 10%;
+  height: 38%;
+  position: absolute;
+  bottom:25em;
+  left: 3em;
+}
+
+.headline h2{
+  font-family: 'Josefin Sans', sans-serif;
+  font-size: 5rem;
+  text-transform: uppercase;
+  font-weight: 100;
+  margin: 0.25em;
+
+}
+
+.article-recent-secondary{
+  border: 2px solid yellow;
+
+}
+
+
+
+}
+
+
+
+
+/* NAVBAR */
+
+.logo{
+  margin: 0;
+    border: 2px solid white ;
+
+}
+
+
+
+nav{
+border: 2px solid white ;
+margin-right: 5em;
+margin: 5em;
 }
 
 .mobile-nav-toggle{
@@ -41,8 +99,38 @@ body{
 
 .primary-navigation a {
   text-decoration: none;
-  color: green;
+  color: white;
 }
+
+.primary-navigation a:hover,
+.primary-navigation a:focus{
+  cursor: pointer;
+  border-bottom: 2px solid white;
+}
+
+
+
+/* articles desktop */
+
+.article-recent-main{
+  border: 3px solid orangered;
+  margin: 7em;
+  margin-top: 50em;
+  width: 86%;
+}
+
+
+
+
+
+
+
+
+
+/* Media Query Mobile display */
+
+
+
 
 @media (max-width: 375px) {
   .primary-navigation{
@@ -58,8 +146,13 @@ body{
 
   .primary-navigation[data-visible="true"]{
         transform: translateX(0%);
-
   }
+
+  .primary-navigation a:hover,
+  .primary-navigation a:focus{
+  cursor: pointer;
+  border-bottom: 2px solid white;
+}
 
   .logo{
     position: absolute;
@@ -67,7 +160,6 @@ body{
     margin-top: -20em;
     color: white;
   }
-
 
 
   .primary-navigation a {
@@ -132,7 +224,7 @@ body{
   line-height: 1;
 
 }
-	
+
 /* Articles */
 
 .article-recent-main{
@@ -199,6 +291,8 @@ width: 90%;
   background-color: transparent;
   padding: 1em 2.5em 1em 2.5em;
   text-align: center;
+    cursor: pointer;
+
 }
 
 .btn-seeall:hover,
