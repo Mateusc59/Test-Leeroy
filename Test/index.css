@@ -47,18 +47,20 @@ body{
   border: 3px solid white;
   margin: auto;
   width: 100%;
-
+  margin-left: 6em;
 }
+
+
 
 .headline {
   padding: 1.25em ;
   color: white;
-  max-width: 70%;
+  max-width: 60%;
   min-width: 10%;
   height: 38%;
   position: absolute;
-  bottom:25em;
-  left: 3em;
+  bottom:20em;
+  left: -2em;
 }
 
 .headline h2{
@@ -82,7 +84,7 @@ body{
   max-width: 35%;
   position: relative;
   bottom: 39em;
-  left: 62em;
+  left: 45em;
 }
 
 .article-title{
@@ -146,6 +148,7 @@ body{
   grid-auto-flow: column;
 }
 
+
 .title-grid{
   margin-left: 3.5em;
   margin-bottom: -15em;
@@ -180,7 +183,7 @@ footer{
   justify-content:flex-end;
   border: 2px solid white;
   margin-top: -6.5em;
-margin-right: 2em;
+  margin-right: 2em;
 }
 
 .desktop-social img{
@@ -287,7 +290,7 @@ nav{
   .logo{
     position: absolute;
     margin:1em;
-    margin-top: -20em;
+    margin-top: -25em;
     color: white;
   }
 
@@ -332,25 +335,24 @@ nav{
 
   .headline {
     position: absolute;
-    height: 30%;
-    width: 88%;
-    margin:1em;
+    height: 25%;
+    width: 92%;
     margin-left:1em;
     margin-top: 2em;
-    color: white;
     border: 2px solid white;
-    font-size: 2em;
-    text-transform: uppercase;
-    letter-spacing: 0.1em;
-    font-weight: lighter;
     display: flex;
     align-items: center;
   }
 
-  .headline h2{
-    display: block;
-    font-weight: 100;
-    padding: 0.35em;
+  .immersive-title{
+    position: relative;
+    bottom: 4.55em;
+    color: white;
+    font-family: 'Josefin Sans', sans-serif;
+    text-transform: uppercase;
+    font-size: 2.75em;
+    letter-spacing: 0.1em;
+    font-weight: lighter;
     line-height: 1;
 
   }
@@ -358,34 +360,46 @@ nav{
   /* Articles */
 
   .article-recent-main{
-    margin-top: 5em;
+    margin: 0 auto;
+    margin-top: -35em;
+    align-items: center;
+    border: 3px solid purple;
+  }
+
+  .article-recent-secondary{
+    border: 3px solid purple;
+    margin-top: -35em;
+    width: 90%;
+    margin-left: 1em;
     display: flex;
     flex-direction: column;
-    align-items: center;
-    margin-left: 1em;
-  }
-
-
-  .article-image{
-  width: 90%;
+    justify-content: center;
 
   }
+
 
   .article-title{
     text-align: center;
-    margin-right: 2em;
-    font-size: 1.75em;
+    font-size: 2em;
+    font-family: 'Josefin Sans', sans-serif;
+    text-transform: uppercase;
+    font-weight: 100;
+     margin-bottom: -0.25em;
+
   }
 
   .article-body{
     margin: 1em;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
     width: 80%;
     padding: 1em;
     line-height: 1.7;
+    font-family: 'Josefin Sans', sans-serif;
+    font-weight: 100;
+    letter-spacing: 1px;
   }
+
+
+    /* Creation */
 
   .creation-section{
     display: flex;
@@ -399,6 +413,10 @@ nav{
     padding: 1.55em;
     margin-bottom: -1.55em;
     position: relative;
+  }
+
+  .creation-image{
+    width: 90%;
   }
 
   .name{
