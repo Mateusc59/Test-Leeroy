@@ -138,11 +138,13 @@ body{
   display: flex;
   flex-direction: column;
   align-items: center;
+  margin-left: 1em;
 }
 
 
 .article-image{
 width: 90%;
+
 }
 
 .article-title{
@@ -169,7 +171,7 @@ width: 90%;
 .image-creations{
   width: 100%;
   align-items: center;
-  padding: 1.25em;
+  padding: 1.55em;
   margin-bottom: -1.55em;
   position: relative;
 }
@@ -205,4 +207,44 @@ width: 90%;
   border-radius: 5%;
 }
 
+footer{
+  margin-top: 5em;
+  padding:3em 0 ;
+  background-color: black;
+
+}
+
+.logo-footer{
+  text-align: center;
+}
+
+.footer-navigation{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  list-style: none;
+   padding: 1em;
+}
+
+.footer-navigation a{
+  text-decoration: none;
+  color: white;
+  font-size: 1.15em;
+  font-family: 'Josefin Sans', sans-serif;
+  line-height: 1.4;
+}
+
+.social-media{
+  display: flex;
+  justify-content: center;
+}
+
+.social-media img{
+  margin: 0.75em;
+}
+
+.law-rules{
+  color: white;
+  text-align: center;
+}
 }
