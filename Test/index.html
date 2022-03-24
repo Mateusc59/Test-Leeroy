@@ -1,8 +1,10 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
 
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
   <link rel="stylesheet" href="index.css">
@@ -10,63 +12,132 @@
   <title>Frontend Mentor</title>
   <script src="nav.js" defer> </script>
   <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-<style>
-  @import url('https://fonts.googleapis.com/css2?family=Alata&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300&display=swap');
-</style>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Alata&display=swap');
+    @import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300&display=swap');
+  </style>
 </head>
+
 <body>
   <header class="primary-header flex">
     <div class="intro">
-      </div>
-        <h1 class="logo">Loopstudios</h1>
-      </div>
+    </div>
+    <h1 class="logo">Loopstudios</h1>
+    </div>
 
-      <div class="headline">
-        <h2>Immersive experiences that deliver</h2>
-      </div>
+    <div class="headline">
+      <h2>Immersive experiences that deliver</h2>
+    </div>
 
-      <button class="mobile-nav-toggle"
-      aria-controls="primary-navigation" aria-expanded="false">
-        <span class="sr-only"></span>
-      </button>
+    <button class="mobile-nav-toggle" aria-controls="primary-navigation" aria-expanded="false">
+      <span class="sr-only"></span>
+    </button>
 
 
-      <nav>
-        <ul id="primary-navigation" data-visible="false" class="primary-navigation flex">
-          <li><a href="#">About</a></li>
-          <li><a href="#">Careers</a></li>
-          <li><a href="#">Events</a></li>
-          <li><a href="#">Products</a></li>
-          <li><a href="#">Support</a></li>
-        </ul>
-      </nav>
+    <nav>
+      <ul id="primary-navigation" data-visible="false" class="primary-navigation flex">
+        <li><a href="#">About</a></li>
+        <li><a href="#">Careers</a></li>
+        <li><a href="#">Events</a></li>
+        <li><a href="#">Products</a></li>
+        <li><a href="#">Support</a></li>
+      </ul>
+    </nav>
 
     </div>
   </header>
 
+  <div class="container container-flex">
+    <main role="main">
+
+      <article class="article-recent">
+        <div class="article-recent-main">
+            <img src="images/mobile/image-interactive.jpg" alt="Man playing with virtual reality joystick" class="article-image">
+          <div class="article-recent-secondary">
+            <h2 class="article-title">The leader in interactive VR </h2>
+            <p class="article-body">Founded in 2011, Loopstudios has been producing world-class virtual reality
+              projects for some of the best companies around the globe. Our award-winning
+              creations have transformed businesses through digital experiences that bind
+              to their brand.</p>
+          </div>
+             <h2 class="article-title">Our creations</h2>
+        </div>
+          <div class="creation-section">
+            <div class="image-creations">
+                <img src="images/mobile/image-deep-earth.jpg" alt="Man playing with virtual reality joystick" class="article-image">
+                <h2 class="image-creations name"> Deep earth</h2>
+              </div>
+
+              <div class="image-creations">
+                <img src="images/mobile/image-night-arcade.jpg" alt="Man playing with virtual reality joystick" class="article-image">
+                <h2 class="image-creations name">Night arcade</h2>
+              </div>
 
 
-  The leader in interactive VR
+              <div class="image-creations">
+                <img src="images/mobile/image-soccer-team.jpg" alt="Man playing with virtual reality joystick" class="article-image">
+                <h2 class="image-creations name">Soccer team VR</h2>
+              </div>
 
-  Founded in 2011, Loopstudios has been producing world-class virtual reality
-  projects for some of the best companies around the globe. Our award-winning
-  creations have transformed businesses through digital experiences that bind
-  to their brand.
+              <div class="image-creations">
+                <img src="images/mobile/image-grid.jpg" alt="Man playing with virtual reality joystick" class="article-image">
+                <h2 class="image-creations name">The grid</h2>
+              </div>
 
-  Our creations
+              <div class="image-creations">
+                <img src="images/mobile/image-from-above.jpg" alt="Man playing with virtual reality joystick" class="article-image">
+                 <h2 class="image-creations name">From up above VR</h2>
+              </div>
 
-  See all
+              <div class="image-creations">
+                <img src="images/mobile/image-pocket-borealis.jpg" alt="Man playing with virtual reality joystick" class="article-image">
+                <h2 class="image-creations name">Pocket borealis</h2>
+              </div>
 
-  Deep earth
-  Night arcade
-  Soccer team VR
-  The grid
-  From up above VR
-  Pocket borealis
-  The curiosity
-  Make it fisheye
+              <div class="image-creations">
+                <img src="images/mobile/image-curiosity.jpg" alt="Man playing with virtual reality joystick" class="article-image">
+                <h2 class="image-creations name">The curiosity</h2>
+              </div>
+
+              <div class="image-creations">
+                <img src="images/mobile/image-fisheye.jpg" alt="Man playing with virtual reality joystick" class="article-image">
+                <h2 class="image-creations name">Make it fisheye</h2>
+              </div>
+            </div>
+      </article>
+        <div class="btn see-all">
+          <button class="btn btn-seeall">SEE ALL</button>
+        </div>
+
+    </main>
+  </div>
+
+<footer>
+  <div class="logo-footer">
+    <img src="images/logo.svg" alt="">
+  </div>
+    <ul   class="footer-navigation flex">
+      <li><a href="#">About</a></li>
+      <li><a href="#">Careers</a></li>
+      <li><a href="#">Events</a></li>
+      <li><a href="#">Products</a></li>
+      <li><a href="#">Support</a></li>
+    </ul>
+  <div class="social-media">
+        <img src="images/icon-facebook.svg" alt="">
+        <img src="images/icon-twitter.svg" alt="">
+        <img src="images/icon-pinterest.svg" alt="">
+        <img src="images/icon-instagram.svg" alt="">
+  </div>
+
+  <div class="law-rules">
+    <p> © 2021 Loopstudios.All rigths reserved</p>
+  </div>
+
+</footer>
+
 
 
 </body>
+
 </html>
