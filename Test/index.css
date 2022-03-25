@@ -30,6 +30,54 @@ body{
 
 }
 
+/* ------------------------NAVBAR--------------------------------- */
+
+.logo{
+  margin: 0;
+  margin-left: 5em;
+  margin-right: 12em;
+  border: 2px solid white ;
+
+}
+
+.intro{
+  border: 2px solid greenyellow;
+  width: 100%;
+}
+
+nav{
+  border: 2px solid gold ;
+  margin-right: 5em;
+  display: flex;
+  justify-content: space-between;
+}
+
+.element-nav{
+  border: 2px solid maroon;
+  width: 100%;
+}
+
+.mobile-nav-toggle{
+  display: none;
+}
+
+.primary-navigation{
+   list-style: none;
+   padding: 0;
+   margin: 0;
+}
+
+.primary-navigation a {
+  text-decoration: none;
+  color: white;
+}
+
+.primary-navigation a:hover,
+.primary-navigation a:focus{
+  cursor: pointer;
+  border-bottom: 2px solid white;
+}
+
 /* primary Header */
 
 .primary-header{
@@ -39,18 +87,37 @@ body{
 
 
 
-/* ------------------mediaquery display desktop----------------- */
+/* ------------------Mediaquery display desktop----------------- */
 
 @media (min-width:375px) {
 
-.container-text{
+
+
+.immersive-title{
+  padding: .25em ;
+  color: white;
+  max-width: 60%;
+  min-width: 10%;
+  height: 19%;
+  position: absolute;
+  left: 1em;
+  top: 3em;
+  font-family: 'Josefin Sans', sans-serif;
+  font-size: 4rem;
+  text-transform: uppercase;
+  font-weight: 100;
+  margin: 0.25em;
+  border: 3px solid white;
+
+}
+
+/*
+.box-headline-nav{
   border: 3px solid white;
   margin: auto;
   width: 100%;
   margin-left: 6em;
 }
-
-
 
 .headline {
   padding: 1.25em ;
@@ -72,6 +139,7 @@ body{
 
 }
 
+*/
 .article-recent-secondary{
   border: 2px solid yellow;
   background-color: white;
@@ -136,9 +204,10 @@ body{
 
 .grid-first-columns{
   width: min(90%,75rem);
-  margin: -3.55em auto;
+  margin:  auto;
   display: grid;
   grid-auto-flow: column;
+
 }
 
 .grid-second-columns{
@@ -148,11 +217,19 @@ body{
   grid-auto-flow: column;
 }
 
+.card-grid:hover,
+.card-grid:focus{
+opacity: 0.5;
+cursor: pointer;
+}
+
+
 
 .title-grid{
   margin-left: 3.5em;
   margin-bottom: -15em;
 }
+
 
 .grid-info{
     position: relative;
@@ -167,7 +244,10 @@ body{
     font-family: 'Josefin Sans', sans-serif;
 }
 
-/* ----------------Footer Desktop */
+
+
+
+/* ----------------Footer Desktop-------------------------- */
 footer{
     margin-top: 5em;
     padding:3em 0 ;
@@ -215,45 +295,6 @@ color: white;
 }
 
 
-
-
-/* ------------------------NAVBAR--------------------------------- */
-
-.logo{
-  margin: 0;
-  border: 2px solid white ;
-
-}
-
-nav{
-  border: 2px solid white ;
-  margin-right: 5em;
-  margin: 5em;
-}
-
-.mobile-nav-toggle{
-  display: none;
-}
-
-.primary-navigation{
-   list-style: none;
-   padding: 0;
-   margin: 0;
-}
-
-.primary-navigation a {
-  text-decoration: none;
-  color: white;
-}
-
-.primary-navigation a:hover,
-.primary-navigation a:focus{
-  cursor: pointer;
-  border-bottom: 2px solid white;
-}
-
-
-
 /* articles desktop */
 
 .article-recent-main img{
@@ -263,7 +304,7 @@ nav{
 
 
 
-/* ---------------------Media Query Mobile display------------------- */
+/* ---------------------MediaQuery Mobile display------------------- */
 
 @media (max-width: 375px) {
   .primary-navigation{
@@ -287,12 +328,6 @@ nav{
     border-bottom: 2px solid white;
 }
 
-  .logo{
-    position: absolute;
-    margin:1em;
-    margin-top: -25em;
-    color: white;
-  }
 
 
   .primary-navigation a {
@@ -325,6 +360,14 @@ nav{
     background-image: url('images/icon-close.svg');
   }
 
+  /* Mobile display Banner   */
+
+  .logo{
+    position: absolute;
+    margin:2em;
+    color: white;
+  }
+
   .intro{
     background-image:url('images/mobile/image-hero.jpg');
     background-size: cover;
@@ -338,7 +381,7 @@ nav{
     height: 25%;
     width: 92%;
     margin-left:1em;
-    margin-top: 2em;
+    margin-top: 25em;
     border: 2px solid white;
     display: flex;
     align-items: center;
@@ -346,7 +389,7 @@ nav{
 
   .immersive-title{
     position: relative;
-    bottom: 4.55em;
+    bottom: .25em;
     color: white;
     font-family: 'Josefin Sans', sans-serif;
     text-transform: uppercase;
@@ -357,7 +400,7 @@ nav{
 
   }
 
-  /* Articles */
+  /*   Mobile display articles  */
 
   .article-recent-main{
     margin: 0 auto;
@@ -399,7 +442,8 @@ nav{
   }
 
 
-    /* Creation */
+    /*  Mobile display Creation card flexbox  */
+
 
   .creation-section{
     display: flex;
@@ -443,7 +487,9 @@ nav{
     background-color: transparent;
     padding: 1em 2.5em 1em 2.5em;
     text-align: center;
-      cursor: pointer;
+    cursor: pointer;
+    transition: all 275ms ease;
+
 
   }
 
@@ -483,6 +529,13 @@ nav{
     font-size: 1.15em;
     font-family: 'Josefin Sans', sans-serif;
     line-height: 1.4;
+
+  }
+
+  .footer-navigation a:hover,
+  .footer-navigation a:hover{
+    border-bottom: 1px solid hsl(0, 0%, 100%);
+
   }
 
   .social-media{

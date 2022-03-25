@@ -9,6 +9,7 @@
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
   <link rel="stylesheet" href="index.css">
 
+
   <title>Frontend Mentor</title>
   <script src="nav.js" defer> </script>
   <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
@@ -22,42 +23,47 @@
   <header class="primary-header flex">
 
     <div class="intro">
-      </div>
-      <img src="images/logo.svg" alt="" class="logo">
-      </div>
 
-        <div class="headline">
-          <div class="container container-text">
-          <h2 class="immersive-title">Immersive experiences that deliver</h2>
+        <button class="mobile-nav-toggle" aria-controls="primary-navigation" aria-expanded="false">
+          <span class="sr-only"></span>
+        </button>
+
+      <div class="element-nav">
+        <nav>
+          <div>
+            <img src="images/logo.svg" alt="logo representing the brand loopstudios" class="logo">
           </div>
-        </div>
-
-      <button class="mobile-nav-toggle" aria-controls="primary-navigation" aria-expanded="false">
-        <span class="sr-only"></span>
-      </button>
-
-
-      <nav>
-        <ul id="primary-navigation" data-visible="false" class="primary-navigation flex">
-          <li><a href="#">About</a></li>
-          <li><a href="#">Careers</a></li>
-          <li><a href="#">Events</a></li>
-          <li><a href="#">Products</a></li>
-          <li><a href="#">Support</a></li>
-        </ul>
-      </nav>
-
+          <div class="headline">
+            <div class="box-headline-nav">
+              <h2 class="immersive-title">Immersive experiences that deliver</h2>
+            </div>
+          </div>
+          <ul id="primary-navigation" data-visible="false" class="primary-navigation flex">
+            <li><a href="#">About</a></li>
+            <li><a href="#">Careers</a></li>
+            <li><a href="#">Events</a></li>
+            <li><a href="#">Products</a></li>
+            <li><a href="#">Support</a></li>
+          </ul>
+        </nav>
+      </div>
     </div>
   </header>
 
-  <div class="container container-flex">
-    <main role="main">
 
-      <article class="article-recent">
-        <div class="article-recent-main">
-            <img src="images/mobile/image-interactive.jpg" alt="Man playing with virtual reality joystick" class="article-img">
+      <div class="container container-flex">
+        <main role="main">
+
+          <article class="article-recent">
+            <div class="article-recent-main">
+                <img src="images/mobile/image-interactive.jpg" alt="Man playing with virtual reality joystick" class="article-img">
+            </div>
         </div>
-    </div>
+
+
+
+      <!-- Main article with picture  mobile and desktop -->
+
 
     <div class="article-recent-secondary">
         <div class="div-title-article">
@@ -68,6 +74,7 @@
         creations have transformed businesses through digital experiences that bind
         to their brand.</p>
     </div>
+        <!-- Desktop display using Grid with another image width -->
 
         <div class="title-box">
         <h2 class="article-title">Our creations</h2>
@@ -75,22 +82,22 @@
       <div>
         <div class="grid-first-columns">
           <div>
-            <img src="images/desktop/image-deep-earth.jpg" alt="">
+            <img src="images/desktop/image-deep-earth.jpg" alt="Rectangular scenary format image of the earth from space" class="card-grid">
             <h2 class="grid-info"> Deep earth</h2>
           </div>
 
           <div>
-            <img src="images/desktop/image-night-arcade.jpg" alt="">
+            <img src="images/desktop/image-night-arcade.jpg" alt="Rectangular portrait format image of arcade game with neon ligth" class="card-grid">
             <h2 class="grid-info">Night Arcade</h2>
           </div>
 
           <div>
-            <img src="images/desktop/image-soccer-team.jpg" alt="">
+            <img src="images/desktop/image-soccer-team.jpg" alt="Rectangular portrait format image of soccer player with red shirt" class="card-grid">
             <h2 class="grid-info">Soccer team VR </h2>
           </div>
 
           <div>
-            <img src="images/desktop/image-grid.jpg" alt="">
+            <img src="images/desktop/image-grid.jpg" alt="Rectangular portrait format image of front racing car" class="card-grid">
              <h2 class="grid-info">The grid</h2>
           </div>
         </div>
@@ -98,66 +105,68 @@
 
         <div class="grid-second-columns">
           <div>
-            <img src="images/desktop/image-from-above.jpg" alt="">
+            <img src="images/desktop/image-from-above.jpg" alt="Rectangular portrait format image of road from above" class="card-grid">
             <h2 class="grid-info">From Up Above VR</h2>
           </div>
 
           <div>
-            <img src="images/desktop/image-pocket-borealis.jpg" alt="">
+            <img src="images/desktop/image-pocket-borealis.jpg" alt="Rectangular portrait format image of aurora borealis" class="card-grid">
             <h2 class="grid-info">pocket borealis</h2>
           </div>
 
           <div>
-            <img src="images/desktop/image-curiosity.jpg" alt="">
+            <img src="images/desktop/image-curiosity.jpg" alt="Rectangular image portrait format of the rover curiosity" class="card-grid">
             <h2 class="grid-info">The curiosity</h2>
           </div>
 
           <div>
-            <img src="images/desktop/image-fisheye.jpg" alt="">
+            <img src="images/desktop/image-fisheye.jpg" alt="Rectangular image portrait format of rounded subject using fisheye effect" class="card-grid">
               <h2 class="grid-info">Make It Fisheye</h2>
           </div>
 
         </div>
 
+        <!-- Mobile display using flexbox with another image width -->
+
           <div class="creation-section">
             <div class="image-creations">
-                <img src="images/mobile/image-deep-earth.jpg" alt="Man playing with virtual reality joystick" class="creation-image">
+                <img src="images/mobile/image-deep-earth.jpg" alt="Rectangular scenary format image of the earth from space" class="creation-image">
                 <h2 class="image-creations name"> Deep earth</h2>
               </div>
 
               <div class="image-creations">
-                <img src="images/mobile/image-night-arcade.jpg" alt="Man playing with virtual reality joystick" class="creation-image">
+                <img src="images/mobile/image-night-arcade.jpg" alt="Rectangular scenary format image of arcade game with neon ligth" class="creation-image">
                 <h2 class="image-creations name">Night arcade</h2>
               </div>
 
 
               <div class="image-creations">
-                <img src="images/mobile/image-soccer-team.jpg" alt="Man playing with virtual reality joystick" class="creation-image">
+                <img src="images/mobile/image-soccer-team.jpg" alt="Rectangular scenary format image of soccer player with red shirt" class="creation-image">
                 <h2 class="image-creations name">Soccer team VR</h2>
               </div>
 
               <div class="image-creations">
-                <img src="images/mobile/image-grid.jpg" alt="Man playing with virtual reality joystick" class="creation-image">
+                <img src="images/mobile/image-grid.jpg" alt="Rectangular scenary format image of front racing car" class="creation-image">
                 <h2 class="image-creations name">The grid</h2>
               </div>
 
               <div class="image-creations">
-                <img src="images/mobile/image-from-above.jpg" alt="Man playing with virtual reality joystick" class="creation-image">
+                <img src="images/mobile/image-from-above.jpg" alt="Rectangular scenary format image of road from above" class="creation-image">
                  <h2 class="image-creations name">From up above VR</h2>
               </div>
 
               <div class="image-creations">
-                <img src="images/mobile/image-pocket-borealis.jpg" alt="Man playing with virtual reality joystick" class="creation-image">
+                <img src="images/mobile/image-pocket-borealis.jpg" alt="Rectangular scenary format image of aurora borealis" class="creation-image">
                 <h2 class="image-creations name">Pocket borealis</h2>
               </div>
 
               <div class="image-creations">
-                <img src="images/mobile/image-curiosity.jpg" alt="Man playing with virtual reality joystick" class="creation-image">
+                <img src="images/mobile/image-curiosity.jpg" alt="Rectangular image scenary format of the rover curiosity " class="creation-image">
                 <h2 class="image-creations name">The curiosity</h2>
               </div>
 
               <div class="image-creations">
-                <img src="images/mobile/image-fisheye.jpg" alt="Man playing with virtual reality joystick" class="creation-image">
+                <img src="images/mobile/image-fisheye.jpg" alt="Rectangular image scenary format of rounded subject using fisheye effect" class="creation-image">
                 <h2 class="image-creations name">Make it fisheye</h2>
               </div>
             </div>
@@ -168,9 +177,11 @@
 
     </main>
 
+        <!--  Footer for mobile & Desktop -->
+
 <footer>
   <div class="logo-footer">
-    <img src="images/logo.svg" alt="" class="desktop-logo">
+    <img src="images/logo.svg" alt="logo representing the brand loopstudios" class="desktop-logo">
   </div>
 
     <ul   class="footer-navigation flex">
@@ -183,10 +194,10 @@
 
   <div class="social-media">
       <div class="desktop-social">
-        <img src="images/icon-facebook.svg" alt="">
-        <img src="images/icon-twitter.svg" alt="">
-        <img src="images/icon-pinterest.svg" alt="">
-        <img src="images/icon-instagram.svg" alt="">
+        <img src="images/icon-facebook.svg" alt="square facebook logo">
+        <img src="images/icon-twitter.svg" alt="The bird twitter logo ">
+        <img src="images/icon-pinterest.svg" alt="Round pinterest logo">
+        <img src="images/icon-instagram.svg" alt="Square instagram camera logo">
       </div>
   </div>
 
