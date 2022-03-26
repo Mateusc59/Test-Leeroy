@@ -1,6 +1,6 @@
 body{
   margin: 0 auto;
-  background-color: white;
+  background-color: hsl(hue, saturation, lightness);
   overflow-x: hidden;
   font-family: 'Alata', sans-serif;
   font-size: 15px;
@@ -23,10 +23,10 @@ body{
 
 .container{
   margin: 0 auto;
-  border: 4px solid green;
+  border: 4px solid transparent;
   width: min(80%,75rem);
   width: 90%;
-  margin-top: 43em;
+  margin-top: 45em;
   margin-bottom: 15em;
 }
 
@@ -38,27 +38,23 @@ body{
 
 .logo{
   margin: 0;
-  margin-left: 5em;
+  margin-left: 6em;
   margin-right: 12em;
-  border: 2px solid white ;
 
 }
 
 .intro{
-  border: 2px solid greenyellow;
   width: 100%;
 }
 
 nav{
-  border: 2px solid gold ;
-  margin-top: 2em;
-  margin-right: 3em;
+  margin-top: 4em;
+  margin-right: 5em;
   display: flex;
   justify-content: space-between;
 }
 
 .element-nav{
-  border: 2px solid maroon;
   width: 100%;
 }
 
@@ -74,12 +70,13 @@ nav{
 
 .primary-navigation a {
   text-decoration: none;
-  color: white;
+  color: hsl(0, 0%, 100%);
 }
 
 .primary-navigation a:hover,
 .primary-navigation a:focus{
   cursor: pointer;
+  padding-bottom: 0.5em;
   border-bottom: 2px solid white;
 }
 
@@ -90,11 +87,15 @@ nav{
   justify-content: space-between;
 }
 
-
+.toggle-logo{
+    display: none;
+  }
 
 /* ------------------Mediaquery display desktop----------------- */
 
 @media (min-width:375px) {
+
+
 
 .box-headline-nav{
   color: white;
@@ -121,38 +122,9 @@ nav{
 
 }
 
-/*
-.box-headline-nav{
-  border: 3px solid white;
-  margin: auto;
-  width: 100%;
-  margin-left: 6em;
-}
 
-.headline {
-  padding: 1.25em ;
-  color: white;
-  max-width: 60%;
-  min-width: 10%;
-  height: 38%;
-  position: absolute;
-  bottom:20em;
-  left: -2em;
-}
-
-.headline h2{
-  font-family: 'Josefin Sans', sans-serif;
-  font-size: 5rem;
-  text-transform: uppercase;
-  font-weight: 100;
-  margin: 0.25em;
-
-}
-
-*/
 .article-recent-secondary{
-  border: 2px solid yellow;
-  background-color: white;
+  background-color: hsl(0, 0%, 100%);
   display: flex;
   flex-direction: column;
   padding: 4em;
@@ -161,8 +133,12 @@ nav{
   width: 60%;
   max-width: 40%;
   position: relative;
-  bottom: 35em;
+  bottom: 37em;
   left: 40em;
+}
+
+.article-body{
+  color: hsl(0, 0%, 41%);
 }
 
 .article-title{
@@ -176,11 +152,9 @@ nav{
 .div-title-article{
   margin-top: -1em;
   width: 100%;
-  border: 2px solid salmon;
 }
 
 .title-box{
-  border: 3px solid black;
   width: 45%;
   margin-left: 2.75em;
   margin-bottom: 2em;
@@ -189,7 +163,7 @@ nav{
 }
 
 .creation-section{
-  display: none;
+    display: none;
 }
 
 .btn-seeall{
@@ -202,24 +176,23 @@ nav{
     text-align: center;
     cursor: pointer;
     position: relative;
-    bottom:86em;
+    bottom:82em;
     left: 34em;
 
   }
 
   .btn-seeall:hover,
   .btn-seeall:focus{
-    background-color: black;
+    background-color: hsl(0, 0%, 0%);
     color: white;
     cursor: pointer;
     border-radius: 5%;
   }
 
 
-/* -----------------grid display desktop */
+/* -----------------grid display desktop ---------------*/
 
 .grid-container{
-  border: 2px solid magenta;
   margin: 0 auto;
   margin-right: 5em;
   width: 100%;
@@ -263,7 +236,7 @@ cursor: pointer;
 
 .grid-info{
     position: relative;
-    color: white;
+    color: hsl(0, 0%, 100%);
     bottom: 4em;
     left: 1em;
     width: 40%;
@@ -277,7 +250,7 @@ cursor: pointer;
 
 
 
-/* ----------------Footer Desktop-------------------------- */
+/* --------------------Footer Desktop-------------------------- */
 footer{
     margin-top: 5em;
     padding:3em 0 ;
@@ -291,35 +264,44 @@ footer{
 .desktop-social{
   display: flex;
   justify-content:flex-end;
-  border: 2px solid white;
   margin-top: -6.5em;
   margin-right: 2em;
 }
 
 .desktop-social img{
   margin: 0.7em;
+  max-width: 2em;
+  padding-bottom: 0.75em;
+}
 
+.desktop-social img:hover,
+.desktop-social img:focus{
+ border-bottom: 2.5px solid hsl(0, 0%, 100%);
+ padding-bottom: 0.75em;
+ max-width: 2em;
+ cursor: pointer;
 }
 
 .footer-navigation a{
   text-decoration: none;
   color: white;
-  margin: -0.15em;
+  margin-right: 1.55em;
+
 }
 .footer-navigation li{
   list-style: none;
 }
 
-/* hover */
-.footer-navigation a:hover{
-border-bottom: 1px solid white;
-padding-bottom: 0.25em ;
+.footer-navigation a:hover,
+.footer-navigation a:focus{
+border-bottom: 1px solid hsl(0, 0%, 100%);
+padding-bottom: 0.55em ;
+
 }
 
-
 .law-rules{
-margin-left: 70%;
-color: white;
+margin-left: 76%;
+color: hsl(0, 0%, 100%);
 }
 
 }
@@ -340,9 +322,9 @@ color: white;
   .primary-navigation{
     position: fixed;
     z-index: 1000;
-    inset: 0 0 0 10%;
+    inset: 0 0 0 0%;
     flex-direction: column;
-    padding: min(30vh, 10rem) 0.5em;
+    padding: min(30vh, 15rem) 0.5em;
     transform: translateX(100%);
     transition: transform  350ms ease;
     background: hsl(0, 0%, 0%);
@@ -355,18 +337,21 @@ color: white;
   .primary-navigation a:hover,
   .primary-navigation a:focus{
     cursor: pointer;
-    border-bottom: 2px solid white;
-}
-
+    border-bottom: 0px solid hsl(0, 0%, 100%);
+  }
 
 
   .primary-navigation a {
     text-decoration: none;
     color:hsl(0, 0%, 100%);
     font-size:2em;
-    font-family: 'Alata', sans-serif;
-    font-weight:lighter;
+    font-family: 'Josefin Sans', sans-serif;
+    font-weight:100;
+    text-transform: uppercase;
+  }
 
+  .primary-navigation li{
+    margin-bottom: 1em;
   }
 
   .mobile-nav-toggle{
@@ -376,7 +361,7 @@ color: white;
     background-color: transparent;
     background: url('images/icon-hamburger.svg');
     background-repeat: no-repeat;
-    color: white;
+    color: hsl(0, 0%, 100%);
     border: none;
     width: 2rem;
     aspect-ratio: 1;
@@ -390,13 +375,20 @@ color: white;
     background-image: url('images/icon-close.svg');
   }
 
-  /* Mobile display Banner   */
+  .toggle-logo{
+    display: block;
+    width: 50%;
+    position: absolute;
+    top: 2em;
+  }
+
+  /* ------------Mobile display Banner   */
 
   .logo{
     position: absolute;
     margin:0.55em;
-    margin-top: -1em;
-    color: white;
+    margin-top: -2em;
+    border: transparent;
   }
 
   .intro{
@@ -404,7 +396,7 @@ color: white;
     background-size: cover;
     min-width: 150%;
     background-position: center;
-    min-height: 88vh;
+    min-height: 90vh;
   }
 
   .headline {
@@ -416,34 +408,34 @@ color: white;
     border: 2px solid white;
     display: flex;
     align-items: center;
+    margin-left: 0.5em;
   }
 
   .immersive-title{
     position: relative;
     bottom: .25em;
     margin: 0.25em;
-    color: white;
+    padding-top: 0.55em;
+    color: hsl(0, 0%, 100%);
     font-family: 'Josefin Sans', sans-serif;
     text-transform: uppercase;
-    font-size: 2.55em;
+    font-size: 2.65em;
     letter-spacing: 0.1em;
     font-weight: 200;
     line-height: 1;
 
   }
 
-  /*   Mobile display articles  */
+  /* ------------  Mobile display articles  */
 
   .article-recent-main{
     margin: 0 auto;
-    margin-top: -36em;
+    margin-top: -39em;
     align-items: center;
-    border: 3px solid green;
   }
 
   .article-recent-secondary{
-    border: 3px solid green;
-    margin-top: -35em;
+    margin-top: -38em;
     width: 90%;
     margin-left: 1em;
     display: flex;
@@ -463,36 +455,41 @@ color: white;
     font-family: 'Josefin Sans', sans-serif;
     text-transform: uppercase;
     font-weight: 100;
-     margin-bottom: -0.25em;
+    margin-bottom: 0.45em;
+    margin-top: 1em;
 
   }
 
   .article-body{
     margin: 1em;
-    width: 80%;
+    width: 85%;
     padding: 1em;
     line-height: 1.7;
     font-family: 'Josefin Sans', sans-serif;
     font-weight: 100;
     letter-spacing: 1px;
+    color: hsl(0, 0%, 41%);
+    text-align: center;
   }
 
 
-    /*  Mobile display Creation card flexbox  */
+    /* -------Mobile display Creation card flexbox  */
 
 
   .creation-section{
     display: flex;
     flex-direction: column;
-
+    margin-left: 0.55em;
   }
 
   .image-creations{
     width: 100%;
     align-items: center;
-    padding: 1.55em;
-    margin-bottom: -1.55em;
+    padding: 0.75em;
+    margin-bottom: -1.25em;
     position: relative;
+    margin-top: 0.55em;
+
   }
 
   .creation-image{
@@ -501,11 +498,11 @@ color: white;
 
   .name{
     position: absolute;
-    color: white;
-    bottom: 1.75em;
-    left: 0.45em;
-    width: 33%;
-    font-size: 1.75em;
+    color: hsl(0, 0%, 100%);
+    bottom: 1.55em;
+    left: 0.25em;
+    width: 35%;
+    font-size: 1.45em;
     font-weight: 100;
     line-height: 1;
     text-transform: uppercase;
@@ -519,7 +516,7 @@ color: white;
     margin: auto;
     margin-top: 2em;
     display: block;
-    border: 1px solid black;
+    border: 1px solid hsl(0, 0%, 0%);
     background-color: transparent;
     padding: 1em 2.5em 1em 2.5em;
     text-align: center;
@@ -531,8 +528,8 @@ color: white;
 
   .btn-seeall:hover,
   .btn-seeall:focus{
-    background-color: black;
-    color: white;
+    background-color: hsl(0, 0%, 0%);
+    color: hsl(0, 0%, 100%);
     cursor: pointer;
     border-radius: 5%;
   }
@@ -543,7 +540,7 @@ color: white;
   footer{
     margin-top: 5em;
     padding:3em 0 ;
-    background-color: black;
+    background-color: hsl(0, 0%, 0%);
 
   }
 
@@ -561,7 +558,7 @@ color: white;
 
   .footer-navigation a{
     text-decoration: none;
-    color: white;
+    color: hsl(0, 0%, 100%);
     font-size: 1.15em;
     font-family: 'Josefin Sans', sans-serif;
     line-height: 1.4;
@@ -569,10 +566,11 @@ color: white;
   }
 
   .footer-navigation a:hover,
-  .footer-navigation a:hover{
+  .footer-navigation a:focus{
     border-bottom: 1px solid hsl(0, 0%, 100%);
 
   }
+
 
   .social-media{
     display: flex;
@@ -584,12 +582,11 @@ color: white;
   }
 
   .law-rules{
-    color: white;
+    color: hsl(0, 0%, 100%);
     text-align: center;
   }
 
   .grid-first-columns{
-    border: 2px solid black;
     display: none;
   }
 
